@@ -74,8 +74,7 @@ const createPlace = async (req, res, next) => {
     description,
     address,
     location: coordinates,
-    image:
-      "https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true",
+    image: req.file.path,
     creator,
   });
 
